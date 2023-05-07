@@ -1,7 +1,10 @@
 {
     "name": "Mystra",
     "rootNamespace": "Mystra",
-    "references": [],
+    "references": [
+        "GUID:55310d19dd4cf4b0abc0414f62481e45",
+        "GUID:2b1ab74285a7b43a5b5fb1df41f6498d"
+    ],
     "includePlatforms": [
         "Editor",
         "macOSStandalone",

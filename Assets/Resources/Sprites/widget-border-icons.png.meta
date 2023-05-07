@@ -253,7 +253,7 @@ TextureImporter:
         width: 13
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,7 +274,7 @@ TextureImporter:
         width: 13
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,7 +295,7 @@ TextureImporter:
         width: 13
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,6 +303,27 @@ TextureImporter:
       bones: []
       spriteID: e6af4bcad62d3480a84ac652cc707319
       internalID: 753282173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: widget-border-icons_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde3e9e6bcdb04187aeb18ed457ecb38
+      internalID: 737092807
       vertices: []
       indices: 
       edges: []
@@ -327,6 +348,7 @@ TextureImporter:
       widget-border-icons_0: -435930057
       widget-border-icons_1: 359100523
       widget-border-icons_2: -465993009
+      widget-border-icons_3: 737092807
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
