@@ -316,7 +316,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,6 +324,69 @@ TextureImporter:
       bones: []
       spriteID: fde3e9e6bcdb04187aeb18ed457ecb38
       internalID: 737092807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: widget-border-icons_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 4, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b473e40bbf0cd4ef5b08828a5dcd6a44
+      internalID: -1841021432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: widget-border-icons_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 5
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ee0977678a64ad9929d840dd621c88
+      internalID: 1231682322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: widget-border-icons_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 6
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e713bd2cc44554c0e8ecc93ddc7886c3
+      internalID: 954572401
       vertices: []
       indices: 
       edges: []
@@ -349,6 +412,9 @@ TextureImporter:
       widget-border-icons_1: 359100523
       widget-border-icons_2: -465993009
       widget-border-icons_3: 737092807
+      widget-border-icons_4: -1841021432
+      widget-border-icons_5: 1231682322
+      widget-border-icons_6: 954572401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

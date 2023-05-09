@@ -7,6 +7,13 @@ namespace Mystra
 {
 	internal sealed class VerticalNavigation : SelectableNavigation
 	{
+        public void ChangeSelectable(int selectedIndex)
+        {
+            m_Selectables[m_SelectedIndex].OnDeselect(null);
+            m_SelectedIndex = selectedIndex;
+            m_Selectables[m_SelectedIndex].OnSelect(null);
+        }
+
         protected override void OnMoveUp(AxisEventData eventData)
         {
             int lastSelectedIndex = m_SelectedIndex;
@@ -45,9 +52,5 @@ namespace Mystra
             }
         }
 
-        public override void OnSubmit(BaseEventData eventData)
-        {
-            m_Selectables[m_SelectedIndex].Select();
-        }
     }
 }
