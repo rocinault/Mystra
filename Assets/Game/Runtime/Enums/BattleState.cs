@@ -5,6 +5,9 @@ namespace Mystra
 	internal enum BattleState
 	{
 		Begin,
-		Wait
+		Wait,
+		Action,
+		Won,
+		Lost
 	}
 }

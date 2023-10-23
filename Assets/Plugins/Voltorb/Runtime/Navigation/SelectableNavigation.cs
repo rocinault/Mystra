@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Voltorb
 {
-    public abstract class SelectableNavigation : MonoBehaviour, IMoveHandler, ISubmitHandler
+    public abstract class SelectableNavigation : MonoBehaviour, IMoveHandler, ISubmitHandler, IDeselectHandler
     {
         [SerializeField]
         protected Selectable[] m_Selectables;
@@ -69,6 +69,11 @@ namespace Voltorb
         protected bool IsTargetSelectableInteractable(int index)
         {
             return m_Selectables[index].IsInteractable();
+        }
+
+        public void OnDeselect(BaseEventData eventData)
+        {
+            m_Selectables[m_SelectedIndex].OnDeselect(eventData);
         }
     }
 }

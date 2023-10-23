@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 namespace Voltorb
 {
     [RequireComponent(typeof(RectTransform))]
-    internal sealed class MenuCursorNavigation : MonoBehaviour
+    public class MenuCursorNavigation : MonoBehaviour
     {
         private RectTransform rectTransform
         {
@@ -26,14 +26,14 @@ namespace Voltorb
 
         }
 
-        public void OnSelect(GameObject selectedObject)
+        public virtual void OnSelect(GameObject selectedObject)
         {
             rectTransform.anchoredPosition = selectedObject.GetComponent<RectTransform>().anchoredPosition;
         }
 
-        public void OnDeselect(GameObject lastSelectedObject)
+        public virtual void OnDeselect(GameObject lastSelectedObject)
         {
-
+           
         }
     }
 }

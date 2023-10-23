@@ -15,7 +15,7 @@ namespace Golem
 
                     if (s_Instance == null)
                     {
-                        s_Instance = CreateHiddenGameObjectInstanceAndDontSave();
+                        s_Instance = CreateHiddenGameObjectInstanceAndDontSave(s_Instance.gameObject);
                     }
                 }
 
@@ -39,9 +39,9 @@ namespace Golem
 #endif
         }
 
-        private static T CreateHiddenGameObjectInstanceAndDontSave()
+        private static T CreateHiddenGameObjectInstanceAndDontSave(GameObject original)
         {
-            return EditorUtility.CreateGameObjectWithHideFlags(typeof(T).Name, HideFlags.HideAndDontSave, typeof(T)).GetComponent<T>();
+            return (GameObject.Instantiate(original).AddComponent<T>()).GetComponent<T>();
         }
     }
 }

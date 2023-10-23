@@ -5,14 +5,18 @@ namespace Voltorb
 {
     public abstract class Menu : MonoBehaviour
     {
-        public virtual void Show()
+        public virtual System.Collections.IEnumerator Show()
         {
             gameObject.SetActive(true);
+
+            yield break;
         }
 
-        public virtual void Hide()
+        public virtual System.Collections.IEnumerator Hide()
         {
             gameObject.SetActive(false);
+
+            yield break;
         }
     }
 

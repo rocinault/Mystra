@@ -10,18 +10,16 @@ namespace Mystra
         [SerializeField]
         private NavigationUtility m_NavigationUtility;
 
-        public override void Show()
+        public override System.Collections.IEnumerator Show()
         {
-            base.Show();
+            yield return base.Show();
 
             m_NavigationUtility.OnShow();
         }
 
-        public override void Hide()
+        public override System.Collections.IEnumerator Hide()
         {
-            base.Hide();
-
-            m_NavigationUtility.OnHide();
+            yield return base.Hide();
         }
     }
 
